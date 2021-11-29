@@ -1,4 +1,4 @@
-/* Basic Style */
+/* Basic Styles */
 
 .page {
   background-color: #f8f8f8;
@@ -74,7 +74,7 @@ button:hover {
   color: #3a3a3a;
 }
 
-/* Heading */
+/* Headings */
 
 h3,
 label[for="new-task"] {
@@ -108,14 +108,14 @@ input[type="text"]:focus {
 
 .new-task {
   display: block;
-  margin: 0 0 20px;
+  margin: 20px 0 0;
 }
 
 #new-task {
   width: 318px;
 }
 
-/* Task list */
+/* Task lists */
 
 li {
   overflow: hidden;
@@ -155,7 +155,7 @@ li > input[type="text"] {
   transform: rotateZ(0);
 }
 
-/* Completed */
+/* Completed Tasks */
 
 #completed-tasks label {
   text-decoration: line-through;
