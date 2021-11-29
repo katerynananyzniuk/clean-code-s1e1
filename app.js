@@ -7,32 +7,37 @@ const completedTasksHolder = document.getElementById('completed-tasks');
 const createNewTaskElement = function(taskString) {
 
   let listItem = document.createElement('li');
+  listItem.className = 'list-item';
 
   let checkBox = document.createElement('input');
   checkBox.type = 'checkbox';
+  checkBox.className = 'task-checkbox';
   listItem.appendChild(checkBox);
 
   let label = document.createElement('label');
   label.innerText = taskString;
-  label.className = 'task';
+  label.className = 'task-label';
   listItem.appendChild(label);
 
   let editInput = document.createElement('input');
   editInput.type = 'text';
-  editInput.className = 'task';
+  editInput.className = 'task-input';
   listItem.appendChild(editInput);
 
   let editButton = document.createElement('button');
   editButton.innerText = 'Edit';
   editButton.className = 'edit';
+  editButton.classList.add('btn');
   listItem.appendChild(editButton);
 
   let deleteButton = document.createElement('button');
   deleteButton.className = 'delete';
+  deleteButton.classList.add('btn');
   listItem.appendChild(deleteButton);
   
   let deleteButtonImg = document.createElement('img');
   deleteButtonImg.src = './remove.svg';
+  deleteButtonImg.className = 'delete-img';
   deleteButton.appendChild(deleteButtonImg);
 
   return listItem;
